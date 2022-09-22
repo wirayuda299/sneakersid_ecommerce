@@ -56,7 +56,7 @@ const Banner = () => {
 									data-aos-duration='800'
 									className='img-fluid banner_img'
 									src={urlFor(item?.image[0])}
-									alt=''
+									alt='banner image'
 								/>
 							</div>
 						</div>

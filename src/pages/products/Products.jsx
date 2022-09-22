@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { client, urlFor } from '../../../lib/client.js'
 import Loader from '../../components/loader/Loader'
 import gotham from '../../assets/image/Gotham.jpg'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Products = () => {
 	const [allProducts, setAllProducts] = useState([]);
@@ -48,7 +49,7 @@ const Products = () => {
 									<div className='col-md-4' key={product._id}>
 										<Link to={`/products/${product._id}`} className='text-decoration-none'>
 											<div className='card product__card shadow-sm '>
-												<img className='card-img-top product__card__img' src={urlFor(product?.image[0])} alt={product.name} />
+												<LazyLoadImage className='card-img-top product__card__img' src={urlFor(product?.image[0])} alt={product.name} lazy />
 												<div className='card-body'>
 													<h5 className='card-title text-white lead fw-bold'>{product.name}</h5>
 													<em className='text-white pb-4'>{product.categories} shoe</em> <br />

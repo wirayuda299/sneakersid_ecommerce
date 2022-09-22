@@ -43,6 +43,7 @@ const Member = () => {
 							src={card}
 							alt='member card'
 							className='img-fluid member__card'
+							lazy
 						/>
 					</div>
 				</div>
