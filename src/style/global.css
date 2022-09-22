@@ -6,7 +6,7 @@
   src: local(""), url("../assets/font/montserrat-v25-latin-800.eot?#iefix") format("embedded-opentype"), url("../assets/font/montserrat-v25-latin-800.woff2") format("woff2"), url("../assets/font/montserrat-v25-latin-800.woff") format("woff"), url("../assets/font/montserrat-v25-latin-800.ttf") format("truetype"), url("../assets/font/montserrat-v25-latin-800.svg#Montserrat") format("svg"); /* Legacy iOS */
 }
 @font-face {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../assets/font/roboto-v30-latin-regular.eot"); /* IE9 Compat Modes */
@@ -14,7 +14,7 @@
 }
 body {
   background: #000;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   color: #fff;
   user-select: none;
@@ -56,7 +56,7 @@ body {
   font-style: italic;
   padding-bottom: 3rem;
   font-weight: 100;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 .best-seller #card.best-seller__card {
   background: rgba(0, 0, 0, 0.26);
@@ -73,7 +73,7 @@ body {
 }
 .product-detail__price {
   font-size: 1.1rem;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 .product-detail__review > * {
   font-size: 1.2rem;
@@ -81,17 +81,17 @@ body {
 .product-detail__desc {
   font-size: 1.1rem;
   font-weight: 100;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 .product-detail__list li {
   font-size: 1.1rem;
   font-weight: 100;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 .product-detail__quantity {
   font-size: 1.3rem;
   font-weight: 100;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
 }
 
 .member__title {
@@ -188,7 +188,7 @@ body {
 }
 
 .notfound .notfound-404 h3 {
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   position: relative;
   font-size: 16px;
   font-weight: 700;
