@@ -3,7 +3,7 @@ import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { client, urlFor } from '../../../lib/client.js'
 import Loader from '../../components/loader/Loader'
-import gotham from '../../assets/image/gotham.jpg'
+import gotham from '../../assets/image/Gotham.jpg'
 
 const Products = () => {
 	const [allProducts, setAllProducts] = useState([]);
