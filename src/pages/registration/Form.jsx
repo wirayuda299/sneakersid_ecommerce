@@ -2,27 +2,19 @@ import {Link} from 'react-router-dom';
 import logo from '../../assets/image/logo.png';
 const Registration = () => {
   return (
-    <div className='container-fluid'>
-      <div className='container min-vh-100 d-flex flex-column justify-content-center align-items-center'>
-        <img
-          src={logo}
-          alt='logo'
-          width={150}
-          height={150}/>
+    <div className='container-fluid registration'>
+      <div className='container d-flex flex-column justify-content-center align-items-center'>
         <form
           action='/'
           style={{
-            width: '400px',
-            height: '650px',
+            maxWidth: '600px',
           }}
         >
-          <h1 className='text-center fw-bold text-uppercase'>
+          <h1 className='text-center registration__title'>
             Become Our Member
           </h1>
           <div
-            className='text-center pb-4 text-muted'
-            style={{fontSize: '0.8rem'}}
-          >
+            className='text-center registration__subtitle  text-white'>
             Create your Sneakers.id Member profile and get first access to the
             very best of our products, inspiration and community.
           </div>
@@ -70,16 +62,16 @@ const Registration = () => {
             <label
               className='form-check-label text-muted py-2'
               htmlFor='news'
-              style={{fontSize: '0.8rem'}}
+              style={{ fontSize: '1rem' }}
             >
               Sign up for emails to get updates from our products, offers and
               your Member benefits
             </label>
           </div>
-          <p className='text-center text-muted pt-3'>
+          <p className='text-center text-white pt-3'>
             by signup you agree our
             <Link
-              className='text-dark px-2'
+              className='text-white px-2'
               to='/privacy'
             >
               Privacy policies
@@ -87,7 +79,7 @@ const Registration = () => {
             and
             <Link
               to='/term-of-use'
-              className='text-dark px-2'
+              className='text-white px-2'
             >
               Terms of Use
             </Link>
@@ -98,10 +90,10 @@ const Registration = () => {
           >
             <h5>Create Account</h5>
           </button>
-          <p className='pt-2'>
+          <p className='pt-2 text-white'>
             Already a member?
             <Link
-              className='text-dark'
+              className='text-white'
               to='/login'
             >
               Sign in

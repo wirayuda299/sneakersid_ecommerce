@@ -2,21 +2,14 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/image/logo.png';
 const Login = () => {
 	return (
-		<div className='container-fluid'>
+		<div className='container-fluid login'>
 			<div className='container min-vh-100 d-flex flex-column justify-content-center align-items-center'>
-				<img
-					src={logo}
-					alt='logo'
-					width={150}
-					height={150}
-				/>
 				<form
 					action='/'
 					style={{
-						width: '450px',
-						height: '650px',
+						maxWidth: '600px',
 					}}>
-					<h1 className='text-center fw-bold pb-2 text-uppercase'>
+					<h1 className='text-center login__title'>
 						1 Account for anywhere
 					</h1>
 					
@@ -53,10 +46,10 @@ const Login = () => {
 						type='submit'>
 						<h5>Login</h5>
 					</button>
-					<p className='pt-2 text-muted'>
+					<p className='pt-2 text-white'>
 						Not a member? 
 						<Link
-							className='text-dark pt-3'
+							className='text-white pt-3'
 							to='/registration'>
 							Sign Up
 						</Link>

@@ -51,7 +51,7 @@ const Banner = () => {
 										</h1>
 										<Link
 											to='/products'
-											className='text-decoration-none btn btn-danger px-4 py-2 banner__btn'
+											className='text-decoration-none btn btn-danger px-2 px-md-3 py-1 py-md-2 banner__btn'
 											data-aos='fade-right'>
 											Shop Now <BiRightArrow />
 										</Link>

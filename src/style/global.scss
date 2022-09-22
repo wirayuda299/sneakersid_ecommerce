@@ -36,13 +36,21 @@ body {
   -moz-user-select: none;
 }
 .navbar {
+  h1 {
+    font-size: 1.4rem;
+  }
+  h1::after {
+    content: 'id';
+    color: red;
+    position: absolute;
+  }
   &_link {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
-    padding-right: 1.5rem;
+    padding-right: 0.7rem;
   }
   &_cart {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .badge {
     font-size: 0.8rem;
@@ -51,23 +59,20 @@ body {
 }
 .banner {
 	&__title {
-		font-size: 4.5rem;
-		font-weight: 800;
+		font-size: 4rem;
 		font-family: 'Montserrat', sans-serif;
 	}
 	.btn.banner__btn {
-		font-size: 1.5rem;
-		font-weight: bold;
+		font-size: 1.3rem;
 	}
 }
 .best-seller {
   &__title {
-    font-size: 4.5rem;
-		font-weight: 800;
+    font-size: 3.5rem;
 		font-family: 'Montserrat', sans-serif;
   }
   &__subtitle {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-style: italic;
     padding-bottom: 3rem;
     font-weight: 100;
@@ -79,32 +84,30 @@ body {
   }
   .card-body {
     h5 {
-      font-size: 1.1rem;
+      font-size: 1rem;
       font-family: 'Montserrat', sans-serif;
     }
   }
 }
 .product-detail {
   &__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-family: 'Montserrat', sans-serif;
   }
   &__price {
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
   }
   &__review > *{
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   &__desc {
-    font-size: 1.1rem;
-    font-weight: 100;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
   }
   &__list {
     li {
-      font-size: 1.1rem;
-    font-weight: 100;
+      font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     }
   }
@@ -116,9 +119,8 @@ body {
 }
 .member {
   &__title {
-    font-size: 4.3rem;
+    font-size: 3.5rem;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
   }
   &__text {
     font-size: 1rem;
@@ -134,45 +136,6 @@ body {
   }
 }
 
-@media screen and (max-width: 992px) {
-	.banner {
-		&__title {
-			font-size: 4rem;
-		}
-	}
-  .navbar {
-    &_link {
-      font-size: 1.3rem;
-    }
-    &_cart {
-      font-size: 2.3rem;
-    }
-  }
-  .best-seller {
-    &__title {
-      font-size: 4rem;
-    }
-  }
-  .product-detail {
-    &__title {
-      font-size: 3rem;
-    }
-    &__desc {
-      font-size: 1rem;
-    }
-  }
-  .member {
-    &__title {
-      font-size: 4rem;
-    }
-    &__text {
-      font-size: 1rem;
-    }
-    &__card {
-      width: 800px;
-    }
-  }
-}
 #notfound {
   position: relative;
   height: 100vh;
@@ -241,18 +204,28 @@ body {
   margin-top: 0px;
   margin-bottom: 25px;
 }
-
-
-@media only screen and (max-width: 767px) {
-  .notfound .notfound-404 {
-    height: 200px;
+.registration {
+  background: #000;
+  &__title {
+    font-size: 3.5rem;
+    color: #ffffff;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
   }
-
-  .notfound .notfound-404 h1 {
-    font-size: 200px;
+  &__subtitle {
+    font-size: 1.1rem;
+    padding: 1.5rem 0;
   }
 }
-
+.login {
+  background: #000;
+  color: #ffffff;
+  &__title {
+    font-size: 3rem;
+    padding: 2rem 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
 @media only screen and (max-width: 480px) {
   .notfound .notfound-404 {
     height: 162px;
@@ -263,28 +236,82 @@ body {
     height: 150px;
     line-height: 162px;
   }
-
   .notfound h2 {
     font-size: 16px;
   }
-}
-@media screen and (max-width: 768px) {
-	.banner {
-		&__title {
-			font-size: 3.5rem;
-		}
-		.btn.banner__btn {
-			font-weight: normal;
-		}
-	}
-  .navbar {
-    &_link {
-      font-size: 1.3rem;
-    }
-    &_cart {
-      font-size: 2.2rem;
+  .login {
+    &__title {
+      font-size: 2rem;
     }
   }
+}
+@media screen and (max-width: 992px) {
+   .navbar {
+    &-brand {
+      h1 {
+        font-size: 1.3rem;
+        margin-left: -20px !important; ;
+      }
+    }
+    &_cart {
+      font-size: 1.7rem;
+    }
+  }
+	.banner {
+		&__title {
+			font-size: 3rem;
+		}
+	}
+  .best-seller {
+    &__title {
+      font-size: 3rem;
+    }
+    &__subtitle {
+      font-size: 1.2rem;
+    }
+  }
+  .product-detail {
+    &__title {
+      font-size: 2.5rem;
+    } 
+  }
+  .member {
+    &__title {
+      font-size: 4rem;
+    }
+    &__card {
+      width: 800px;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+   .notfound .notfound-404 {
+    height: 200px;
+  }
+
+  .notfound .notfound-404 h1 {
+    font-size: 200px;
+  }
+   .navbar {
+    &-brand {
+      h1 {
+        font-size: 1rem;
+        margin-left: -20px !important; ;
+      }
+    }
+   
+    &_cart {
+      font-size: 1.5rem;
+    }
+  }
+	.banner {
+		&__title {
+			font-size: 2.5rem;
+		}
+    &__btn {
+      font-size: 1.2rem !important;
+    }
+	}
   .product-detail {
     &__title {
       font-size: 2rem;
@@ -295,43 +322,60 @@ body {
   }
   .best-seller {
     &__title {
-      font-size: 3.5rem;
+      font-size: 2.5rem;
+    }
+    &__subtitle {
+      font-size: 1rem;
     }
   }
   .member {
     &__title {
-      font-size: 3.6rem;
+      font-size: 3.3rem;
     }
   }
 }
 @media screen and (max-width: 576px) {
-	.banner {
-		&__title {
-			font-size: 2.9rem;
-		}
-		.btn.banner__btn {
-			font-weight: normal;
-		}
-	}
   .navbar {
+    &-brand {
+      h1 {
+        font-size: 1rem;
+        margin-left: -20px !important; ;
+      }
+    }
     &_link {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
     &_cart {
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
   }
+	.banner {
+		&__title {
+			font-size: 2rem;
+		}
+    &__btn {
+      font-size: 0.8rem !important;
+    }
+	}
   .best-seller {
     &__title {
-      font-size: 2.9rem;
+      font-size: 2rem;
     }
     &__subtitle {
-      font-size: 0.9rem;
+      font-size: 0.7rem;
     }
   }
   .member {
     &__title {
       font-size: 3rem;
+    }
+  }
+  .registration {
+    &__title {
+      font-size: 2.5rem;
+    }
+    &__subtitle {
+      font-size: 0.8rem;
     }
   }
 }

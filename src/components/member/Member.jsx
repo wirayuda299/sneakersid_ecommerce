@@ -22,13 +22,13 @@ const Member = () => {
 						data-aos-delay='200'
 						data-aos-offset='200'>
 						<h1 className='fw-bold member__title text-white pb-3 pt-5'>Join as a member </h1>
-						<p className='text-white member__text pb-3'>
+						<p className='text-white member__text pb-3 '>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quasi autem iusto beatae odio, amet aspernatur saepe eos obcaecati consequuntur, iure odit facere. Dolor, amet neque. Quo reiciendis magnam commodi repellat asperiores corrupti, vero aliquam nulla eveniet totam! Natus earum unde asperiores, totam sapiente ipsa delectus minima cumque sunt quod!
 						</p>
-						<div className='btn btn-danger btn-lg fw-semibold mt-3 px-5 fs-3'>
+						<div className='btn btn-danger fw-semibold mt-3 '>
 							<Link
 								to='/registration'
-								className='text-decoration-none text-white'>
+								className='text-decoration-none text-white px-2'>
 								Join us
 							</Link>
 						</div>
