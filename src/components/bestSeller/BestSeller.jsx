@@ -49,7 +49,6 @@ const BestSeller = () => {
 											src={urlFor(item?.image[0])}
 											alt={item.name}
 											className='card-img-top'
-											lazy
 										/>
 										<div className='card-body'>
 											<h5 className='card-text lead text-white'>{item.name}</h5>

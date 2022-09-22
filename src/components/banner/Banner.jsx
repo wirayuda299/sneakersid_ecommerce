@@ -63,6 +63,8 @@ const Banner = () => {
 											className='img-fluid banner_img'
 											src={urlFor(item?.image[0])}
 											alt='banner image'
+											width={500}
+											height={500}
 										/>
 									</div>
 								</div>
