@@ -1,0 +1,344 @@
+$main-font: 'Roboto', sans-serif;
+$heading-font: 'Montserrat', sans-serif;
+$navbar-brand: 'Dancing Script', cursive;
+
+@import '../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../../node_modules/bootstrap/scss/_badge.scss';
+@import '../../node_modules/bootstrap/scss/_buttons.scss';
+@import '../../node_modules/bootstrap/scss/_card.scss';
+@import '../../node_modules/bootstrap/scss/_close.scss';
+@import '../../node_modules/bootstrap/scss/_navbar.scss';
+@import '../../node_modules/bootstrap/scss/_modal.scss';
+@import '../../node_modules/bootstrap/scss/_accordion.scss';
+@import '../../node_modules/bootstrap/scss/_transitions.scss';
+@import '../../node_modules/bootstrap/scss/_spinners.scss';
+@import '../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import '../../node_modules/bootstrap/scss/carousel.scss';
+@import '../../node_modules/bootstrap/scss/_images.scss';
+@import '../../node_modules/bootstrap/scss/button-group.scss';
+
+
+body {
+  background: #000;
+	font-family: $main-font;
+	font-size: 14px;
+	color: #fff;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.navbar {
+  &-brand > *{
+    font-family: $navbar-brand;
+    font-size: 2rem;
+  }
+  &_link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-right: 1.5rem;
+  }
+  &_cart {
+    font-size: 2rem;
+  }
+  .badge {
+    font-size: 0.8rem;
+    left: 75%;
+  }
+}
+.banner {
+	&__title {
+		font-size: 4.5rem;
+		font-weight: 800;
+		font-family: $heading-font;
+	}
+	.btn.banner__btn {
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+}
+.best-seller {
+  &__title {
+    font-size: 4.5rem;
+		font-weight: 800;
+		font-family: $heading-font;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+    font-style: italic;
+    padding-bottom: 3rem;
+    font-weight: 100;
+    font-family: $main-font
+  }
+  #card.best-seller__card {
+    background: rgba(0, 0, 0, 0.26);
+    transition:.3s ease-in-out;
+  }
+  .card-body {
+    h5 {
+      font-size: 1.1rem;
+      font-family: $heading-font;
+    }
+  }
+}
+.product-detail {
+  &__title {
+    font-size: 3.5rem;
+    font-family: $heading-font;
+  }
+  &__price {
+    font-size: 1.1rem;
+    font-family: $main-font;
+  }
+  &__review > *{
+    font-size: 1.2rem;
+  }
+  &__desc {
+    font-size: 1.1rem;
+    font-weight: 100;
+    font-family: $main-font;
+  }
+  &__list {
+    li {
+      font-size: 1.1rem;
+    font-weight: 100;
+    font-family: $main-font;
+    }
+  }
+  &__quantity {
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: $main-font;
+  }
+}
+.member {
+  &__title {
+    font-size: 4.3rem;
+    font-family: $heading-font;
+    font-weight: 800;
+  }
+  &__text {
+    font-size: 1rem;
+  }
+  &__card {
+    width: 600px;
+  }
+}
+.product {
+  &__card {
+     background: rgba(0, 0, 0, 0.199) !important;
+     border: .1px solid rgba(0, 0, 0, 0.075) !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+	.banner {
+		&__title {
+			font-size: 4rem;
+		}
+	}
+  .navbar {
+    &_link {
+      font-size: 1.3rem;
+    }
+    &_cart {
+      font-size: 2.3rem;
+    }
+  }
+  .best-seller {
+    &__title {
+      font-size: 4rem;
+    }
+  }
+  .product-detail {
+    &__title {
+      font-size: 3rem;
+    }
+    &__desc {
+      font-size: 1rem;
+    }
+  }
+  .member {
+    &__title {
+      font-size: 4rem;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+    &__card {
+      width: 800px;
+    }
+  }
+}
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 520px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.notfound .notfound-404 {
+  position: relative;
+  height: 240px;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: $heading-font;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 252px;
+  font-weight: 900;
+  margin: 0px;
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin-left: -20px;
+}
+
+.notfound .notfound-404 h1>span {
+  text-shadow: -8px 0px 0px #fff;
+}
+
+.notfound .notfound-404 h3 {
+  font-family: $main-font;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  letter-spacing: 3px;
+  padding-left: 6px;
+}
+
+.notfound h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+
+@media only screen and (max-width: 767px) {
+  .notfound .notfound-404 {
+    height: 200px;
+  }
+
+  .notfound .notfound-404 h1 {
+    font-size: 200px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .notfound .notfound-404 {
+    height: 162px;
+  }
+
+  .notfound .notfound-404 h1 {
+    font-size: 162px;
+    height: 150px;
+    line-height: 162px;
+  }
+
+  .notfound h2 {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+	.banner {
+		&__title {
+			font-size: 3.5rem;
+		}
+		.btn.banner__btn {
+			font-weight: normal;
+		}
+	}
+  .navbar {
+    &_link {
+      font-size: 1.3rem;
+    }
+    &_cart {
+      font-size: 2.2rem;
+    }
+  }
+  .product-detail {
+    &__title {
+      font-size: 2rem;
+    }
+    &__desc {
+      font-size: 0.8rem;
+    }
+  }
+  .best-seller {
+    &__title {
+      font-size: 3.5rem;
+    }
+  }
+  .member {
+    &__title {
+      font-size: 3.6rem;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+	.banner {
+		&__title {
+			font-size: 2.9rem;
+		}
+		.btn.banner__btn {
+			font-weight: normal;
+		}
+	}
+  .navbar {
+    &_link {
+      font-size: 1.2rem;
+    }
+    &_cart {
+      font-size: 2rem;
+    }
+  }
+  .best-seller {
+    &__title {
+      font-size: 2.9rem;
+    }
+    &__subtitle {
+      font-size: 0.9rem;
+    }
+  }
+  .member {
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
+@keyframes shoeAnimate {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}

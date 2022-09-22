@@ -1,0 +1,34 @@
+{
+  "name": "sneakersidsanity",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "package.json",
+  "author": "wirayuda299 <wirayuda233@gmail.com>",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "sanity start",
+    "build": "sanity build"
+  },
+  "keywords": [
+    "sanity"
+  ],
+  "dependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.19.1",
+    "@babel/preset-env": "^7.19.1",
+    "@sanity/base": "^2.33.3",
+    "@sanity/core": "^2.33.3",
+    "@sanity/default-layout": "^2.33.3",
+    "@sanity/default-login": "^2.33.3",
+    "@sanity/desk-tool": "^2.33.3",
+    "@sanity/eslint-config-studio": "^2.0.0",
+    "@sanity/vision": "^2.33.3",
+    "eslint": "^8.6.0",
+    "prop-types": "^15.7",
+    "react": "^17.0",
+    "react-dom": "^17.0",
+    "styled-components": "^5.2.0"
+  },
+  "devDependencies": {}
+}
