@@ -1,7 +1,7 @@
 import { client, urlFor } from '../../../lib/client';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { useEffect, useState } from 'react';
-import gotham from '../../assets/image/gotham.jpg';
+import gotham from '../../assets/image/Gotham.jpg';
 import toast from 'react-hot-toast';
 
 const BestSeller = () => {
