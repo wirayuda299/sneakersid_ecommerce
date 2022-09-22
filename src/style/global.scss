@@ -1,9 +1,33 @@
-$main-font: 'Roboto', sans-serif;
-$heading-font: 'Montserrat', sans-serif;
-$navbar-brand: 'Dancing Script', cursive; 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 800;
+  src: url('../assets/font/montserrat-v25-latin-800.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/font/montserrat-v25-latin-800.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/font/montserrat-v25-latin-800.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/font/montserrat-v25-latin-800.woff') format('woff'), /* Modern Browsers */
+       url('../assets/font/montserrat-v25-latin-800.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/font/montserrat-v25-latin-800.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/font/roboto-v30-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../assets/font/roboto-v30-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../assets/font/roboto-v30-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../assets/font/roboto-v30-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../assets/font/roboto-v30-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../assets/font/roboto-v30-latin-regular.svg#Roboto') format('svg'); /* Legacy iOS */
+}
+
+
 body {
   background: #000;
-	font-family: $main-font;
+	font-family: 'Roboto';
 	font-size: 14px;
 	color: #fff;
   user-select: none;
@@ -12,10 +36,6 @@ body {
   -moz-user-select: none;
 }
 .navbar {
-  &-brand > *{
-    font-family: $navbar-brand;
-    font-size: 2rem;
-  }
   &_link {
     font-size: 1.2rem;
     font-weight: 600;
@@ -33,7 +53,7 @@ body {
 	&__title {
 		font-size: 4.5rem;
 		font-weight: 800;
-		font-family: $heading-font;
+		font-family: 'Montserrat', sans-serif;
 	}
 	.btn.banner__btn {
 		font-size: 1.5rem;
@@ -44,14 +64,14 @@ body {
   &__title {
     font-size: 4.5rem;
 		font-weight: 800;
-		font-family: $heading-font;
+		font-family: 'Montserrat', sans-serif;
   }
   &__subtitle {
     font-size: 1.5rem;
     font-style: italic;
     padding-bottom: 3rem;
     font-weight: 100;
-    font-family: $main-font
+    font-family: 'Roboto'
   }
   #card.best-seller__card {
     background: rgba(0, 0, 0, 0.26);
@@ -60,18 +80,18 @@ body {
   .card-body {
     h5 {
       font-size: 1.1rem;
-      font-family: $heading-font;
+      font-family: 'Montserrat', sans-serif;
     }
   }
 }
 .product-detail {
   &__title {
     font-size: 3.5rem;
-    font-family: $heading-font;
+    font-family: 'Montserrat', sans-serif;
   }
   &__price {
     font-size: 1.1rem;
-    font-family: $main-font;
+    font-family: 'Roboto';
   }
   &__review > *{
     font-size: 1.2rem;
@@ -79,25 +99,25 @@ body {
   &__desc {
     font-size: 1.1rem;
     font-weight: 100;
-    font-family: $main-font;
+    font-family: 'Roboto';
   }
   &__list {
     li {
       font-size: 1.1rem;
     font-weight: 100;
-    font-family: $main-font;
+    font-family: 'Roboto';
     }
   }
   &__quantity {
     font-size: 1.3rem;
     font-weight: 100;
-    font-family: $main-font;
+    font-family: 'Roboto';
   }
 }
 .member {
   &__title {
     font-size: 4.3rem;
-    font-family: $heading-font;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 800;
   }
   &__text {
@@ -180,7 +200,7 @@ body {
 }
 
 .notfound .notfound-404 h1 {
-  font-family: $heading-font;
+  font-family: 'Montserrat', sans-serif;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -201,7 +221,7 @@ body {
 }
 
 .notfound .notfound-404 h3 {
-  font-family: $main-font;
+  font-family: 'Roboto';
   position: relative;
   font-size: 16px;
   font-weight: 700;
@@ -313,14 +333,5 @@ body {
     &__title {
       font-size: 3rem;
     }
-  }
-}
-
-@keyframes shoeAnimate {
-  from {
-    transform: translate(0);
-  }
-  to {
-    transform: translateY(10px);
   }
 }
